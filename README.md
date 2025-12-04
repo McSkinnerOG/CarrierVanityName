@@ -31,9 +31,9 @@ This fork introduces several improvements:
 
 ### Tasker Broadcast Intent Example (via IntentTask Plugin)
 ```
-Action: gay.nullby.carriername.SET_CARRIER_NAME
-Package: gay.nullby.carriername
-Class: gay.nullby.carriername.CarrierNameReceiver
+Action: valid.carriername.SET_CARRIER_NAME
+Package: valid.carriername
+Class: valid.carriername.CarrierNameReceiver
 Text Extras:
   Name: new_carrier_name
   Value: Hello 🌤️
@@ -48,8 +48,8 @@ Text Extras:
 ### ADB Shell Command Example
 ```
 adb shell am broadcast \
-  -a gay.nullby.carriername.SET_CARRIER_NAME \
-  -n gay.nullby.carriername/.CarrierNameReceiver \
+  -a valid.carriername.SET_CARRIER_NAME \
+  -n valid.carriername/.CarrierNameReceiver \
   --es new_carrier_name "Hello 🌤️" \
   --es iso_region us \
   --ei subscription_id 1
